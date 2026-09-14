@@ -114,19 +114,44 @@ let swiperTestimonials = new Swiper(".testimonials-swiper", {
 const contactForm = document.getElementById("contact-form"),
   contactMessage = document.getElementById("contact-message");
 
+// EmailJS configuration - replace with your own credentials
+const EMAILJS_SERVICE_ID = "service_2a47zj5";
+const EMAILJS_TEMPLATE_ID = "template_liidcx4";
+const EMAILJS_PUBLIC_KEY = "inw2Ky9Pw4Bh0H5hS";
+
 const sendEmail = (e) => {
   e.preventDefault();
 
-  // Displays confirmation message
-  contactMessage.textContent = "Message sent successfully ✅";
-  contactMessage.style.color = "#00d084";
+  const formData = new FormData(contactForm);
+  const templateParams = {
+    user_name: formData.get("user_name"),
+    user_email: formData.get("user_email"),
+    user_project: formData.get("user_project"),
+  };
 
-  // Clear input fields after 4 seconds
-  setTimeout(() => {
-    contactMessage.textContent = "";
-  }, 4000);
+  contactMessage.textContent = "Sending...";
 
-  contactForm.reset();
+  emailjs
+    .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
+    .then(
+      () => {
+        // Displays confirmation message
+        contactMessage.textContent = "Message sent successfully ✅";
+        contactMessage.style.color = "#00d084";
+
+        // Clear input fields after 4 seconds
+        setTimeout(() => {
+          contactMessage.textContent = "";
+        }, 4000);
+
+        contactForm.reset();
+      },
+      (error) => {
+        contactMessage.textContent = "Message failed to send. Please try again.";
+        contactMessage.style.color = "#ff4d4d";
+        console.error("EmailJS error:", error);
+      }
+    );
 };
 
 if (contactForm) {
