@@ -1,765 +1,886 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!--navbar setup-->
+      <nav class="nav container">
+        <a href="#" class="nav-logo">Jani</a>
 
-  <header class="header">
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item"><a href="#work" class="nav-link">Works</a></li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
 
-    <!--navbar setup-->
-    <nav class="nav container">
-      <a href="#" class="nav-logo">Jani</a>
-
-      <div class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#work" class="nav-link">Works</a></li>
-          <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-
-        <div class="social-links">
-          <a href="https://wa.me/+263718009932" target="_blank" class="social-link">
-              <i class="ri-linkedin-fill"></i>
-          </a>
-
-          <a href="https://github.com/sirjani05" target="_blank" class="social-link">
-            <i class="ri-github-fill"></i>
-          </a>
-
-          <a href="https://wa.me/+263718009932" target="_blank" class="social-link">
-            <i class="ri-whatsapp-fill"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="nav-buttons">
-        <div class="nav-settings" id="switcher-toggle">
-          <li class="ri-settings-3-line"></li>
-        </div>
-      </div>
-
-      <div class="nav-toggle" id="nav-toggle"></div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- home -->
-     <section class="home section">
-      <div class="home-container container">
-        <div class="home-content">
-          <h2 class="home-subtitle">Hello, <span>My Name is</span></h2>
-          <h1 class="home-title"><span>Keith </span>Jani</h1>
-          <h3 class="home-job">Software Developer</h3>
-
-          <div class="home-banner">
-            <div class="home-img-wrapper">
-              <img src="assets/profile.webp" alt="Profile Picture" class="home-profile">
-            </div>
-
-            <div class="home-data home-data-one">
-              <span class="home-data-no">4 +</span>
-              <h3 class="home-data-title">Months of <span>Experience</span></h3>
-            </div>
-
-            <div class="home-data home-data-two">
-              <span class="home-data-no">4</span>
-              <h3 class="home-data-title">Completed <span>Projects</span></h3>
-            </div>
-
-            <img src="assets/shapes4.png" alt="" class="shape shape-1">
-            <img src="assets/shapes4.png" alt="" class="shape shape-2">
-            <img src="assets/shapes4.png" alt="" class="shape shape-3">
-
-          </div>
-
-          <p class="home-description">
-            I am from Harare, Zimbabwe. I have rich experience in web Branding and am skilled in React. I love discussing what makes us unique.
-          </p>
-
-          <div class="home-socials social-links">
-          
-            <a href="https://wa.me/+263718009932" target="_blank" class="social-link">
+          <div class="social-links">
+            <a
+              href="https://linkedin.com/in/keith-jani-783a88436"
+              target="_blank"
+              class="social-link"
+            >
               <i class="ri-linkedin-fill"></i>
             </a>
 
-            <a href="https://github.com/sirjani05" target="_blank" class="social-link">
+            <a
+              href="https://github.com/sirjani05"
+              target="_blank"
+              class="social-link"
+            >
               <i class="ri-github-fill"></i>
             </a>
 
-            <a href="https://wa.me/+263718009932" target="_blank" class="social-link">
+            <a
+              href="https://wa.me/+263718009932"
+              target="_blank"
+              class="social-link"
+            >
               <i class="ri-whatsapp-fill"></i>
             </a>
           </div>
+        </div>
 
-          <div class="home-btns">
-            <a download="" href="assets/Keith_Jani_CV.docx.pdf" class="btn">
-              Download CV
+        <div class="nav-buttons">
+          <div class="nav-settings" id="switcher-toggle">
+            <li class="ri-settings-3-line"></li>
+          </div>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- home -->
+      <section class="home section">
+        <div class="home-container container">
+          <div class="home-content">
+            <h2 class="home-subtitle">Hello, <span>My Name is</span></h2>
+            <h1 class="home-title"><span>Keith </span>Jani</h1>
+            <h3 class="home-job">Software Developer</h3>
+
+            <div class="home-banner">
+              <div class="home-img-wrapper">
+                <img
+                  src="assets/profile.webp"
+                  alt="Profile Picture"
+                  class="home-profile"
+                />
+              </div>
+
+              <div class="home-data home-data-one">
+                <span class="home-data-no">4 +</span>
+                <h3 class="home-data-title">
+                  Months of <span>Experience</span>
+                </h3>
+              </div>
+
+              <div class="home-data home-data-two">
+                <span class="home-data-no">4</span>
+                <h3 class="home-data-title">Completed <span>Projects</span></h3>
+              </div>
+
+              <img src="assets/shapes4.png" alt="" class="shape shape-1" />
+              <img src="assets/shapes4.png" alt="" class="shape shape-2" />
+              <img src="assets/shapes4.png" alt="" class="shape shape-3" />
+            </div>
+
+            <p class="home-description">
+              I am from Harare, Zimbabwe. I have rich experience in web Branding
+              and am skilled in React. I love discussing what makes us unique.
+            </p>
+
+            <div class="home-socials social-links">
+              <a
+                href="https://linkedin.com/in/keith-jani-783a88436"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+
+              <a
+                href="https://github.com/sirjani05"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+
+              <a
+                href="https://wa.me/+263718009932"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="ri-whatsapp-fill"></i>
+              </a>
+            </div>
+
+            <div class="home-btns">
+              <a
+                download=""
+                href="assets/Keith_Jani_Curriculum_Vitae.pdf"
+                class="btn"
+              >
+                Download CV
+              </a>
+
+              <a href="#" class="home-link">My Skills</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section class="services section" id="services">
+        <h2 class="section-title" data-title="My Services">What I Do</h2>
+
+        <div class="container">
+          <div class="swiper services-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card">
+                <h4 class="services-subtitle">Web Development</h4>
+
+                <h3 class="services-title">Web Branding & Logo</h3>
+                <p class="services-description">
+                  Web Brandingers craft the overall vision & plan for a website
+                  layout. Professional logo development: Business, Company or
+                  Personal.
+                </p>
+              </div>
+
+              <div class="swiper-slide card">
+                <h4 class="services-subtitle">Apps Development</h4>
+
+                <h3 class="services-title">iOS & Android</h3>
+                <p class="services-description">
+                  Branding Software applications to run on mobile devices.
+                  Modern and mobile-ready applications that will help you reach
+                  all of your marketing.
+                </p>
+              </div>
+
+              <div class="swiper-slide card">
+                <h4 class="services-subtitle">Game Development</h4>
+
+                <h3 class="services-title">Unity & Unreal Engine</h3>
+                <p class="services-description">
+                  Creating games & describes the Branding, development and
+                  release of a game. Developing unique mobile android and ios
+                  games.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title" data-title="My Talent">
+          Professional Skills
+        </h2>
+        <div class="skills-container container grid">
+          <div class="skills-item">
+            <div class="skills-header">
+              <h3 class="skills-name">HTML</h3>
+            </div>
+
+            <p class="skills-description">
+              Our greatest glory is not in never falling, but in rising every
+              time we fall. Success is not final, failure is not fatal..
+            </p>
+
+            <div class="skills-bar"></div>
+          </div>
+
+          <div class="skills-item">
+            <div class="skills-header">
+              <h3 class="skills-name">JavaScript</h3>
+            </div>
+
+            <p class="skills-description">
+              Programs must be written for people to read and only incidentally
+              for machines to execute.
+            </p>
+
+            <div class="skills-bar"></div>
+          </div>
+
+          <div class="skills-item">
+            <div class="skills-header">
+              <h3 class="skills-name">TypeScript</h3>
+            </div>
+
+            <p class="skills-description">
+              Type safety is not about restricting your freedom; it is about
+              guaranteeing your peace of mind.
+            </p>
+
+            <div class="skills-bar"></div>
+          </div>
+
+          <div class="skills-item">
+            <div class="skills-header">
+              <h3 class="skills-name">CSS</h3>
+            </div>
+
+            <p class="skills-description">
+              Be flexible, resilient and capable of centering yourself. You
+              can't have a rainbow without a little linear-gradient().
+            </p>
+
+            <div class="skills-bar"></div>
+          </div>
+
+          <div class="skills-item">
+            <div class="skills-header">
+              <h3 class="skills-name">React.jsx</h3>
+            </div>
+
+            <p class="skills-description">
+              The best way to get started is to quit talking and begin doing.
+              Failure is the condiment that gives success its flavor.
+            </p>
+
+            <div class="skills-bar"></div>
+          </div>
+
+          <div class="skills-item">
+            <div class="skills-header">
+              <h3 class="skills-name">React.tsx</h3>
+            </div>
+
+            <p class="skills-description">
+              The pessimist sees difficulty in every opportunity. The optimist
+              sees opportunity in every difficulty.
+            </p>
+
+            <div class="skills-bar"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section class="work section" id="work">
+        <h2 class="section-title" data-title="My Cases">Portfolio</h2>
+
+        <div class="container">
+          <ul class="work-list">
+            <li class="work-item active-work" data-filter="all">All</li>
+            <li class="work-item" data-filter=".javaScript">JavaScript</li>
+            <li class="work-item" data-filter=".python">Python</li>
+            <li class="work-item" data-filter=".react">React</li>
+          </ul>
+
+          <div class="work-container grid">
+            <div class="mix javaScript">
+              <div class="card">
+                <img src="assets/travelJournal.jpeg" alt="" class="work-img" />
+
+                <h4 class="work-category">JavaScipt</h4>
+                <h3 class="work-title">Travel Journal</h3>
+
+                <p class="work-description">
+                  When I decide to follow my dream I had already discarded my
+                  life. It's okay to lose your way... just don't lose sight of
+                  what you have decided.
+                </p>
+
+                <a
+                  href="https://travel-journal-nine-sigma.vercel.app/"
+                  target="_blank"
+                  class="link"
+                  >See Project <i class="ri-arrow-right-line link-icon"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="mix react">
+              <div class="card">
+                <img
+                  src="assets/businessTracker.jpeg"
+                  alt=""
+                  class="work-img"
+                />
+
+                <h4 class="work-category">React</h4>
+                <h3 class="work-title">Business Tracker</h3>
+
+                <p class="work-description">
+                  Personal development is a lifelong journey. Each new day
+                  brings the opportunity to grow, learn and become better than
+                  yesterday.
+                </p>
+
+                <a
+                  href="https://vercel.com/sirjani05s-projects/business-tracker"
+                  target="_blank"
+                  class="link"
+                  >See Project <i class="ri-arrow-right-line link-icon"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="mix javaScript">
+              <div class="card">
+                <img src="assets/vividHorizon.jpeg" alt="" class="work-img" />
+
+                <h4 class="work-category">JavaScript</h4>
+                <h3 class="work-title">Vivid Horizons</h3>
+
+                <p class="work-description">
+                  If they can't see the vision, don't let them hold the camera
+                  because photography is a way of feeling and touching. What you
+                  have caught on film is captured forever.
+                </p>
+
+                <a
+                  href="https://vivid-horizons.vercel.app/"
+                  target="_blank"
+                  class="link"
+                  >See Project <i class="ri-arrow-right-line link-icon"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="mix python">
+              <div class="card">
+                <img src="assets/flavorFoundry.jpeg" alt="" class="work-img" />
+
+                <h4 class="work-category">Python</h4>
+                <h3 class="work-title">Flavor Foundry</h3>
+
+                <p class="work-description">
+                  Stay consistent. Results take time. Being consistent one day
+                  will become a habbit you won't be able to break or live
+                  without. Consistency is the key to success.
+                </p>
+
+                <a
+                  href="https://flavor-foundry.onrender.com"
+                  target="_blank"
+                  class="link"
+                  >See Project <i class="ri-arrow-right-line link-icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- resume -->
+      <section class="resume section" id="resume">
+        <h2 class="section-title" data-title="My Story">Resume</h2>
+
+        <div class="resume-container container grid">
+          <div class="resume-group">
+            <h3 class="resume-title">Education</h3>
+
+            <div class="resume-items">
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">CoderHouse Courses</h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">Frontend Programming</h3>
+                    <span class="resume-date">January - February 2026</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Completed comprehensive coursework covering modern HTML5,
+                    CSS3, JavaScript (ES6+) and responsive web design practices.
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">
+                    Lviv National Academy of Arts
+                  </h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">Faculty of Design</h3>
+                    <span class="resume-date">February - March 2026</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Studied visual design principles, typography and user
+                    experience concepts to create clean, user-centric web
+                    interfaces.
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">IT Future</h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">High School</h3>
+                    <span class="resume-date">March - April 2026</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Focused on computer science fundamentals, logic, initial
+                    programming languages and collaborative software projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-group">
+            <h3 class="resume-title">Experience</h3>
+
+            <div class="resume-items">
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">CoderHouse Courses</h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">
+                      Frontend Programming Assistant
+                    </h3>
+                    <span class="resume-date">April - May 2026</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Assisted students with JavaScript and React code reviews,
+                    debugged front-end issues and built practical web exercises.
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">
+                    Lviv National Academy of Arts
+                  </h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">UI/UX Web Developer</h3>
+                    <span class="resume-date">May - June 2026</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Designed interactive frontend components and integrated
+                    responsive layout designs for departmental web applications.
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-header">
+                  <h3 class="resume-header-title">IT Future</h3>
+                  <span class="resume-icon">
+                    <i class="ri-add-line"></i>
+                  </span>
+                </div>
+
+                <div class="resume-content">
+                  <div class="resume-content-header">
+                    <h3 class="resume-content-title">Software Developer</h3>
+                    <span class="resume-date">June - August 2026</span>
+                  </div>
+
+                  <p class="resume-description">
+                    Developing client-facing web components using modern React
+                    and TypeScript workflows to deliver responsive digital
+                    solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonials -->
+
+      <section class="testimonials section" id="testimonials">
+        <h2 class="section-title" data-title="My Customers Say">
+          Testimonials
+        </h2>
+
+        <div class="container">
+          <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card">
+                <div class="testimonial-icon">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+
+                <img src="#" alt="" class="testimonial-img" />
+
+                <p class="testimonial-description">
+                  Keith has an impressive eye for detail. His modern React
+                  workflows and clean frontend architecture made integrating our
+                  web applications completely seamless.
+                </p>
+
+                <h3 class="testimonial-name">Dylan Maupa</h3>
+                <span class="testimonial-author">Software Developer</span>
+              </div>
+
+              <div class="swiper-slide card">
+                <div class="testimonial-icon">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+
+                <img src="#" alt="" class="testimonial-img" />
+
+                <p class="testimonial-description">
+                  Working alongside Keith was fantastic. He writes clean,
+                  scalable JavaScript and consistently delivers intuitive user
+                  interfaces ahead of deadline.
+                </p>
+
+                <h3 class="testimonial-name">Vincent Mugondora</h3>
+                <span class="testimonial-author">Software Developer</span>
+              </div>
+
+              <div class="swiper-slide card">
+                <div class="testimonial-icon">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+
+                <img src="#" alt="" class="testimonial-img" />
+
+                <p class="testimonial-description">
+                  Keith's problem-solving skills and dedication to code quality
+                  stand out. He easily translates complex backend requirements
+                  into slick frontend solutions.
+                </p>
+
+                <h3 class="testimonial-name">Sharone Mwandura</h3>
+                <span class="testimonial-author">Software Developer</span>
+              </div>
+
+              <div class="swiper-slide card">
+                <div class="testimonial-icon">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+
+                <img src="#" alt="" class="testimonial-img" />
+
+                <p class="testimonial-description">
+                  Keith transformed our branding vision into a high-performing
+                  site. His focus on responsive design significantly boosted our
+                  client engagement metrics.
+                </p>
+
+                <h3 class="testimonial-name">Lloyd Winya</h3>
+                <span class="testimonial-author">Digital Marketer</span>
+              </div>
+
+              <div class="swiper-slide card">
+                <div class="testimonial-icon">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+
+                <img src="#" alt="" class="testimonial-img" />
+
+                <p class="testimonial-description">
+                  Keith seamlessly bridges the gap between design and
+                  functionality. He took our UI layouts and built fluid,
+                  pixel-perfect digital experiences.
+                </p>
+
+                <h3 class="testimonial-name">Kayden Munyaradzi</h3>
+                <span class="testimonial-author">Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title" data-title="Get In Touch">Contact Me</h2>
+
+        <div class="contact-container container grid">
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-card">
+                <i class="ri-mail-line contact-card-icon"></i>
+                <h3 class="contact-card-title">Email</h3>
+                <span class="contact-card-data">keithjani05@gmail.com</span>
+                <a href="mailto:keithjani05@gmail.com" class="contact-button">
+                  Write me
+                  <i class="ri-arrow-right-line contact-button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact-card">
+                <i class="ri-whatsapp-line contact-card-icon"></i>
+                <h3 class="contact-card-title">WhatsApp</h3>
+                <span class="contact-card-data">+263 71 800 9932</span>
+                <a
+                  href="https://wa.me/+263718009932"
+                  target="_blank"
+                  class="contact-button"
+                >
+                  Write me
+                  <i class="ri-arrow-right-line contact-button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact-card">
+                <i class="ri-map-pin-line contact-card-icon"></i>
+                <h3 class="contact-card-title">Location</h3>
+                <span class="contact-card-data">Harare, Zimbabwe</span>
+                <a
+                  href="https://maps.google.com"
+                  target="_blank"
+                  class="contact-button"
+                >
+                  View on map
+                  <i class="ri-arrow-right-line contact-button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-content">
+            <form action="" class="contact-form" id="contact-form">
+              <div class="contact-form-div">
+                <label class="contact-form-tag">Name</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  placeholder="Insert your name"
+                  class="contact-form-input"
+                  required
+                />
+              </div>
+
+              <div class="contact-form-div">
+                <label class="contact-form-tag">Mail</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  placeholder="Insert your email"
+                  class="contact-form-input"
+                  required
+                />
+              </div>
+
+              <div class="contact-form-div contact-form-area">
+                <label class="contact-form-tag">Project / Message</label>
+                <textarea
+                  name="user_project"
+                  placeholder="Write your project details"
+                  class="contact-form-input"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn">Send Message</button>
+
+              <p class="contact-message" id="contact-message"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container container grid">
+        <div class="footer-content">
+          <a href="#" class="footer-logo">Jani</a>
+          <p class="footer-description">
+            Software Developer based in Harare, Zimbabwe, specializing in React
+            and modern Web Branding.
+          </p>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#work" class="footer-link">Works</a></li>
+            <li><a href="#resume" class="footer-link">Resume</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Services</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Web Branding & Logo</a></li>
+            <li><a href="#" class="footer-link">App Development</a></li>
+            <li><a href="#" class="footer-link">Game Development</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Social</h3>
+          <div class="footer-socials social-links">
+            <a
+              href="https://wa.me/+263718009932"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="ri-linkedin-fill"></i>
             </a>
-
-            <a href="#" class="home-link">My Skills</a>
-          </div>
-
-        </div>
-      </div>
-     </section>
-
-    <!-- services -->
-     <section class="services section" id="services">
-      <h2 class="section-title" data-title="My Services">
-        What I Do
-      </h2>
-
-      <div class="container">
-        <div class="swiper services-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide card">
-              <h4 class="services-subtitle">Web Development</h4>
-
-              <h3 class="services-title">Web Branding & Logo</h3>
-              <p class="services-description">
-                Web Brandingers craft the overall vision & plan for a website layout. Professional logo development: Business, Company or Personal.
-              </p>
-            </div>
-
-
-            <div class="swiper-slide card">
-              <h4 class="services-subtitle">Apps Development</h4>
-
-              <h3 class="services-title">iOS & Android</h3>
-              <p class="services-description">
-                Branding Software applications to run on mobile devices. Modern and mobile-ready applications that will help you reach all of your marketing.
-              </p>
-            </div>
-
-
-            <div class="swiper-slide card">
-              <h4 class="services-subtitle">Game Development</h4>
-
-              <h3 class="services-title">Unity & Unreal Engine</h3>
-              <p class="services-description">
-                Creating games & describes the Branding, development and release of a game. Developing unique mobile android and ios games.
-              </p>
-            </div>
-
-          </div>
-
-          <div class="swiper-pagination"></div>
-
-          <div class="swiper-scrollbar"></div>
-        </div>
-      </div>
-     </section>
-
-    <!-- skills -->
-     <section class="skills section" id="skills">
-      <h2 class="section-title" data-title="My Talent">Professional Skills</h2>
-      <div class="skills-container container grid">
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">HTML</h3>
-          </div>
-
-          <p class="skills-description">
-            Our greatest glory is not in never falling, but in rising every time we fall. Success is not final, failure is not fatal..
-          </p>
-
-          <div class="skills-bar">
-          </div>
-        </div>
-
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">JavaScript</h3>
-          </div>
-
-          <p class="skills-description">
-            Programs must be written for people to read and only incidentally for machines to execute.
-          </p>
-
-          <div class="skills-bar">
-          </div>
-        </div>
-
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">TypeScript</h3>
-          </div>
-
-          <p class="skills-description">
-            Type safety is not about restricting your freedom; it is about guaranteeing your peace of mind.
-          </p>
-
-          <div class="skills-bar">
-          </div>
-        </div>
-
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">CSS</h3>
-          </div>
-
-          <p class="skills-description">
-            Be flexible, resilient and capable of centering yourself. You can't have a rainbow without a little linear-gradient().
-          </p>
-
-          <div class="skills-bar">
-          </div>
-        </div>
-
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">React.jsx</h3>
-          </div>
-
-          <p class="skills-description">
-            The best way to get started is to quit talking and begin doing. Failure is the condiment that gives success its flavor.
-          </p>
-
-          <div class="skills-bar">
-          </div>
-        </div>
-
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">React.tsx</h3>
-          </div>
-
-          <p class="skills-description">
-            The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.
-          </p>
-
-          <div class="skills-bar">
+            <a
+              href="https://github.com/sirjani05"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="ri-github-fill"></i>
+            </a>
+            <a
+              href="https://wa.me/+263718009932"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="ri-whatsapp-fill"></i>
+            </a>
           </div>
         </div>
       </div>
-     </section>
 
-    <!-- work -->
-     <section class="work section" id="work">
-      <h2 class="section-title" data-title="My Cases">Portfolio</h2>
-
-      <div class="container">
-        <ul class="work-list">
-          <li class="work-item active-work" data-filter="all">All</li>
-          <li class="work-item" data-filter=".javaScript">JavaScript</li>
-          <li class="work-item" data-filter=".python">Python</li>
-          <li class="work-item" data-filter=".react">React</li>
-        </ul>
-
-        <div class="work-container grid">
-          <div class="mix javaScript">
-            <div class="card">
-              <img src="assets/travelJournal.jpeg" alt="" class="work-img">
-
-              <h4 class="work-category">JavaScipt</h4>
-              <h3 class="work-title">Travel Journal</h3>
-
-              <p class="work-description">
-                When I decide to follow my dream I had already discarded my life. It's okay
-                to lose your way... just don't lose sight of what you have decided.
-              </p>
-
-              <a href="https://travel-journal-nine-sigma.vercel.app/" target="_blank" class="link">See Project <i class="ri-arrow-right-line link-icon"></i></a>
-            </div>
-          </div>
-
-
-          <div class="mix react">
-            <div class="card">
-              <img src="assets/businessTracker.jpeg" alt="" class="work-img">
-
-              <h4 class="work-category">React</h4>
-              <h3 class="work-title">Business Tracker</h3>
-
-              <p class="work-description">
-                Personal development is a lifelong journey. Each new day brings the opportunity to grow, learn and become better than yesterday.
-              </p>
-
-              <a href="https://vercel.com/sirjani05s-projects/business-tracker" target="_blank" class="link">See Project <i class="ri-arrow-right-line link-icon"></i></a>
-            </div>
-          </div>
-
-
-          <div class="mix javaScript"> 
-            <div class="card">
-              <img src="assets/vividHorizon.jpeg" alt="" class="work-img">
-
-              <h4 class="work-category">JavaScript</h4>
-              <h3 class="work-title">Vivid Horizons</h3>
-
-              <p class="work-description">
-                If they can't see the vision, don't let them hold the camera because photography is a way of feeling and touching.
-                What you have caught on film is captured forever.
-              </p>
-
-              <a href="https://vivid-horizons.vercel.app/" target="_blank" class="link">See Project <i class="ri-arrow-right-line link-icon"></i></a>
-            </div>
-          </div>
-
-          <div class="mix python"> 
-            <div class="card">
-              <img src="assets/flavorFoundry.jpeg" alt="" class="work-img">
-
-              <h4 class="work-category">Python</h4>
-              <h3 class="work-title">Flavor Foundry</h3>
-
-              <p class="work-description">
-                Stay consistent. Results take time. Being consistent one day will become a
-                habbit you won't be able to break or live without. Consistency is the key to success.
-              </p>
-
-              <a href="https://flavor-foundry.onrender.com" target="_blank" class="link">See Project <i class="ri-arrow-right-line link-icon"></i></a>
-            </div>
-          </div>
-
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="footer-copy">&#169; Keith Jani. All rights reserved.</p>
         </div>
       </div>
-     </section>
-
-     <!-- resume -->
-     <section class="resume section" id="resume">
-      <h2 class="section-title" data-title="My Story">Resume</h2>
-
-      <div class="resume-container container grid">
-        <div class="resume-group">
-          <h3 class="resume-title">Education</h3>
-
-          <div class="resume-items">
-            <div class="resume-item">
-              <div class="resume-header">
-                <h3 class="resume-header-title">CoderHouse Courses</h3>
-                <span class="resume-icon">
-                  <i class="ri-add-line"></i>
-                </span>
-              </div>
-
-              <div class="resume-content">
-                <div class="resume-content-header">
-                  <h3 class="resume-content-title">Frontend Programming</h3>
-                  <span class="resume-date">January - February 2026</span>
-                </div>
-
-                <p class="resume-description">
-                  Completed comprehensive coursework covering modern HTML5, CSS3, JavaScript (ES6+) and responsive web design practices.
-                </p>
-              </div>
-            </div>
-
-            <div class="resume-item">
-              <div class="resume-header">
-                <h3 class="resume-header-title">Lviv National Academy of Arts</h3>
-                <span class="resume-icon">
-                  <i class="ri-add-line"></i>
-                </span>
-              </div>
-
-              <div class="resume-content">
-                <div class="resume-content-header">
-                  <h3 class="resume-content-title">Faculty of Design</h3>
-                  <span class="resume-date">February - March 2026</span>
-                </div>
-
-                <p class="resume-description">
-                  Studied visual design principles, typography and user experience concepts to create clean, user-centric web interfaces.
-                </p>
-              </div>
-            </div>
-
-            <div class="resume-item">
-              <div class="resume-header">
-                <h3 class="resume-header-title">IT Future</h3>
-                <span class="resume-icon">
-                  <i class="ri-add-line"></i>
-                </span>
-              </div>
-
-              <div class="resume-content">
-                <div class="resume-content-header">
-                  <h3 class="resume-content-title">High School</h3>
-                  <span class="resume-date">March - April 2026</span>
-                </div>
-
-                <p class="resume-description">
-                  Focused on computer science fundamentals, logic, initial programming languages and collaborative software projects.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="resume-group">
-          <h3 class="resume-title">Experience</h3>
-
-          <div class="resume-items">
-            <div class="resume-item">
-              <div class="resume-header">
-                <h3 class="resume-header-title">CoderHouse Courses</h3>
-                <span class="resume-icon">
-                  <i class="ri-add-line"></i>
-                </span>
-              </div>
-
-              <div class="resume-content">
-                <div class="resume-content-header">
-                  <h3 class="resume-content-title">Frontend Programming Assistant</h3>
-                  <span class="resume-date">April - May 2026</span>
-                </div>
-
-                <p class="resume-description">
-                  Assisted students with JavaScript and React code reviews, debugged front-end issues and built practical web exercises.
-                </p>
-              </div>
-            </div>
-
-            <div class="resume-item">
-              <div class="resume-header">
-                <h3 class="resume-header-title">Lviv National Academy of Arts</h3>
-                <span class="resume-icon">
-                  <i class="ri-add-line"></i>
-                </span>
-              </div>
-
-              <div class="resume-content">
-                <div class="resume-content-header">
-                  <h3 class="resume-content-title">UI/UX Web Developer</h3>
-                  <span class="resume-date">May - June 2026</span>
-                </div>
-
-                <p class="resume-description">
-                  Designed interactive frontend components and integrated responsive layout designs for departmental web applications.
-                </p>
-              </div>
-            </div>
-
-            <div class="resume-item">
-              <div class="resume-header">
-                <h3 class="resume-header-title">IT Future</h3>
-                <span class="resume-icon">
-                  <i class="ri-add-line"></i>
-                </span>
-              </div>
-
-              <div class="resume-content">
-                <div class="resume-content-header">
-                  <h3 class="resume-content-title">Software Developer</h3>
-                  <span class="resume-date">June - August 2026</span>
-                </div>
-
-                <p class="resume-description">
-                  Developing client-facing web components using modern React and TypeScript workflows to deliver responsive digital solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-     </div>
-    </section>
-
-
-     <!-- testimonials -->
-
-     <section class="testimonials section" id="testimonials">
-      <h2 class="section-title" data-title="My Customers Say">Testimonials</h2>
-
-      <div class="container">
-        <div class="swiper testimonials-swiper">
-          <div class="swiper-wrapper">
-
-
-            <div class="swiper-slide card">
-              <div class="testimonial-icon">
-                <i class="ri-double-quotes-r"></i>
-              </div>
-
-              <img src="#" alt="" class="testimonial-img">
-
-              <p class="testimonial-description">
-                Keith has an impressive eye for detail. His modern React workflows and clean frontend architecture made integrating our web applications completely seamless.
-              </p>
-
-              <h3 class="testimonial-name">Dylan Maupa</h3>
-              <span class="testimonial-author">Software Developer</span>
-            </div>
-
-
-
-            <div class="swiper-slide card">
-              <div class="testimonial-icon">
-                <i class="ri-double-quotes-r"></i>
-              </div>
-
-              <img src="#" alt="" class="testimonial-img">
-
-              <p class="testimonial-description">
-                Working alongside Keith was fantastic. He writes clean, scalable JavaScript and consistently delivers intuitive user interfaces ahead of deadline.
-              </p>
-
-              <h3 class="testimonial-name">Vincent Mugondora</h3>
-              <span class="testimonial-author">Software Developer</span>
-            </div>
-
-
-
-            <div class="swiper-slide card">
-              <div class="testimonial-icon">
-                <i class="ri-double-quotes-r"></i>
-              </div>
-
-              <img src="#" alt="" class="testimonial-img">
-
-              <p class="testimonial-description">
-                Keith's problem-solving skills and dedication to code quality stand out. He easily translates complex backend requirements into slick frontend solutions.
-              </p>
-
-              <h3 class="testimonial-name">Sharone Mwandura</h3>
-              <span class="testimonial-author">Software Developer</span>
-            </div>
-
-
-
-            <div class="swiper-slide card">
-              <div class="testimonial-icon">
-                <i class="ri-double-quotes-r"></i>
-              </div>
-
-              <img src="#" alt="" class="testimonial-img">
-
-              <p class="testimonial-description">
-                Keith transformed our branding vision into a high-performing site. His focus on responsive design significantly boosted our client engagement metrics.
-              </p>
-
-              <h3 class="testimonial-name">Lloyd Winya</h3>
-              <span class="testimonial-author">Digital Marketer</span>
-            </div>
-
-
-            <div class="swiper-slide card">
-              <div class="testimonial-icon">
-                <i class="ri-double-quotes-r"></i>
-              </div>
-
-              <img src="#" alt="" class="testimonial-img">
-
-              <p class="testimonial-description">
-                Keith seamlessly bridges the gap between design and functionality. He took our UI layouts and built fluid, pixel-perfect digital experiences.
-              </p>
-
-              <h3 class="testimonial-name">Kayden Munyaradzi</h3>
-              <span class="testimonial-author">Designer</span>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-     </section>
-
-    <!-- contact -->
-    <section class="contact section" id="contact">
-      <h2 class="section-title" data-title="Get In Touch">Contact Me</h2>
-
-      <div class="contact-container container grid">
-        <div class="contact-content">
-          <div class="contact-info">
-            
-            <div class="contact-card">
-              <i class="ri-mail-line contact-card-icon"></i>
-              <h3 class="contact-card-title">Email</h3>
-              <span class="contact-card-data">keithjani05@gmail.com</span>
-              <a href="mailto:keithjani05@gmail.com" class="contact-button">
-                Write me <i class="ri-arrow-right-line contact-button-icon"></i>
-              </a>
-            </div>
-
-            <div class="contact-card">
-              <i class="ri-whatsapp-line contact-card-icon"></i>
-              <h3 class="contact-card-title">WhatsApp</h3>
-              <span class="contact-card-data">+263 71 800 9932</span>
-              <a href="https://wa.me/+263718009932" target="_blank" class="contact-button">
-                Write me <i class="ri-arrow-right-line contact-button-icon"></i>
-              </a>
-            </div>
-
-            <div class="contact-card">
-              <i class="ri-map-pin-line contact-card-icon"></i>
-              <h3 class="contact-card-title">Location</h3>
-              <span class="contact-card-data">Harare, Zimbabwe</span>
-              <a href="https://maps.google.com" target="_blank" class="contact-button">
-                View on map <i class="ri-arrow-right-line contact-button-icon"></i>
-              </a>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="contact-content">
-          <form action="" class="contact-form" id="contact-form">
-            <div class="contact-form-div">
-              <label class="contact-form-tag">Name</label>
-              <input type="text" name="user_name" placeholder="Insert your name" class="contact-form-input" required>
-            </div>
-
-            <div class="contact-form-div">
-              <label class="contact-form-tag">Mail</label>
-              <input type="email" name="user_email" placeholder="Insert your email" class="contact-form-input" required>
-            </div>
-
-            <div class="contact-form-div contact-form-area">
-              <label class="contact-form-tag">Project / Message</label>
-              <textarea name="user_project" placeholder="Write your project details" class="contact-form-input" required></textarea>
-            </div>
-
-            <button type="submit" class="btn">
-              Send Message
-            </button>
-            
-            <p class="contact-message" id="contact-message"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-   <!-- footer -->
-  <footer class="footer">
-    <div class="footer-container container grid">
-      
-      <div class="footer-content">
-        <a href="#" class="footer-logo">Jani</a>
-        <p class="footer-description">
-          Software Developer based in Harare, Zimbabwe, specializing in React and modern Web Branding.
-        </p>
-      </div>
-
-      <div class="footer-content">
-        <h3 class="footer-title">Quick Links</h3>
-        <ul class="footer-links">
-          <li><a href="#" class="footer-link">Home</a></li>
-          <li><a href="#services" class="footer-link">Services</a></li>
-          <li><a href="#skills" class="footer-link">Skills</a></li>
-          <li><a href="#work" class="footer-link">Works</a></li>
-          <li><a href="#resume" class="footer-link">Resume</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-content">
-        <h3 class="footer-title">Services</h3>
-        <ul class="footer-links">
-          <li><a href="#" class="footer-link">Web Branding & Logo</a></li>
-          <li><a href="#" class="footer-link">App Development</a></li>
-          <li><a href="#" class="footer-link">Game Development</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-content">
-        <h3 class="footer-title">Social</h3>
-        <div class="footer-socials social-links">
-          <a href="https://wa.me/+263718009932" target="_blank" class="social-link">
-            <i class="ri-linkedin-fill"></i>
-          </a>
-          <a href="https://github.com/sirjani05" target="_blank" class="social-link">
-            <i class="ri-github-fill"></i>
-          </a>
-          <a href="https://wa.me/+263718009932" target="_blank" class="social-link">
-            <i class="ri-whatsapp-fill"></i>
-          </a>
+    </footer>
+
+    <!-- style switcher -->
+    <div class="style-switcher" id="style-switcher">
+      <h2 class="style-switcher-title">Style Switcher</h2>
+
+      <div class="style-switcher-item">
+        <h3 class="style-switcher-subtitle">Colours</h3>
+
+        <div class="style-switcher-colors">
+          <span class="style-switcher-color active-color" style="--hue: 165">
+            <i class="ri-check-line"></i>
+          </span>
+
+          <span class="style-switcher-color" style="--hue: 260">
+            <i class="ri-check-line"></i>
+          </span>
+
+          <span class="style-switcher-color" style="--hue: 345">
+            <i class="ri-check-line"></i>
+          </span>
+
+          <span class="style-switcher-color" style="--hue: 65">
+            <i class="ri-check-line"></i>
+          </span>
+
+          <span class="style-switcher-color" style="--hue: 15">
+            <i class="ri-check-line"></i>
+          </span>
         </div>
       </div>
 
-    </div>
+      <div class="style-switcher-item">
+        <h3 class="style-switcher-subtitle">Theme</h3>
 
-    <div class="footer-bottom">
-      <div class="container">
-        <p class="footer-copy">
-          &#169; Keith Jani. All rights reserved.
-        </p>
+        <div class="style-switcher-themes">
+          <div class="style-switcher-theme">
+            <input
+              type="radio"
+              class="style-switcher-input"
+              name="body-theme"
+              value="light"
+              checked="true"
+              id="light-theme"
+            />
+
+            <label for="light-theme" class="style-switcher-label">Light</label>
+          </div>
+
+          <div class="style-switcher-theme">
+            <input
+              type="radio"
+              class="style-switcher-input"
+              name="body-theme"
+              value="dark"
+              id="dark-theme"
+            />
+
+            <label for="dark-theme" class="style-switcher-label">Dark</label>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
 
-  <!-- style switcher -->
-   <div class="style-switcher" id="style-switcher">
-    <h2 class="style-switcher-title">Style Switcher</h2>
-
-    <div class="style-switcher-item">
-      <h3 class="style-switcher-subtitle">Colours</h3>
-
-      <div class="style-switcher-colors">
-        <span class="style-switcher-color active-color" style="--hue: 165">
-          <i class="ri-check-line"></i>
-        </span>
-
-        <span class="style-switcher-color" style="--hue: 260">
-          <i class="ri-check-line"></i>
-        </span>
-
-        <span class="style-switcher-color" style="--hue: 345">
-          <i class="ri-check-line"></i>
-        </span>
-
-        <span class="style-switcher-color" style="--hue: 65">
-          <i class="ri-check-line"></i>
-        </span>
-
-        <span class="style-switcher-color" style="--hue: 15">
-          <i class="ri-check-line"></i>
-        </span>
-
+      <div class="style-switcher-close" id="switcher-close">
+        <i class="ri-close-line"></i>
       </div>
     </div>
 
-    <div class="style-switcher-item">
-      <h3 class="style-switcher-subtitle">Theme</h3>
+    <!-- swiper js -->
 
-      <div class="style-switcher-themes">
-        <div class="style-switcher-theme">
-          <input type="radio" class="style-switcher-input" name="body-theme" value="light" checked="true" id="light-theme"/>
+    <!-- mixitup -->
+    <script src="mixitup.min.js"></script>
 
-          <label for="light-theme" class="style-switcher-label">Light</label>
+    <!-- email js -->
 
-        </div>
-
-        <div class="style-switcher-theme">
-          <input type="radio" class="style-switcher-input" name="body-theme" value="dark" id="dark-theme"/>
-
-          <label for="dark-theme" class="style-switcher-label">Dark</label>
-
-        </div>
-
-
-      </div>
-    </div>
-
-    <div class="style-switcher-close" id="switcher-close">
-      <i class="ri-close-line"></i>
-    </div>
-
-  </div>
-
-  <!-- swiper js -->
-
-  <!-- mixitup -->
-   <script src="mixitup.min.js"></script>
-
-  <!-- email js -->
-
-  <!-- js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <script src="scripts.js"></script>
-</body>
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
